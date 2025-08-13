@@ -10,17 +10,17 @@
 <body>
     <div class="nav">
         <div class="buttons">
-            <div class="opcao"><h2>HOME</h2></div>
-            <div class="opcao"><h2>SER</h2></div>
+            <div class="fundo-amarelo"><h2>HOME</h2></div>
+            <div class="fundo-roxo"><h2>SER</h2></div>
         </div>
-        <div>
+        <div class="logo">
             <img src="assets/1.png" alt="" height="150">
         </div>
 
         <div class="buttons">
 
-            <div class="opcao"><h2>CONTATO</h2></div>
-            <div class="opcao"><h2>SOBRE</h2></div>
+            <div class="fundo-verde"><h2>CONTATO</h2></div>
+            <div class="fundo-roxo"><h2>SOBRE</h2></div>
         </div>
     </div>
 
@@ -28,6 +28,40 @@
 
 </html>
 <style>
+    .logo{
+        background-repeat: no-repeat;
+        background-size: cover; 
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        width: min-content;
+    }
+    .fundo-verde {
+        background-color: #b0e57c;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .fundo-amarelo {
+        background-color: #fdfd96;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .fundo-roxo {
+        background-color: #d3b0e5;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
     .opcao{
         justify-items: center;
         justify-content: center;
@@ -38,9 +72,14 @@
     .nav {
         background-image: url(/assets/image.webp);
         justify-items: center;
-        columns: 3;
         font-size: 30px;
         height: 150px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        padding: 0px;
+        columns: 5;
+        margin: 0px;
     }
 
     .buttons {
@@ -60,7 +99,7 @@
         justify-self: center;
         justify-items: center;
         text-align: center;
-        text-shadow: 10px;
+        text-shadow: 0px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
     }
