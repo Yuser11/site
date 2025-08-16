@@ -8,8 +8,10 @@
 <body>
     <nav class="nav">
         <div class="navbar">
-            <div class="logo"> <img src="assets/1.png" class="logo"></div>
-            <div class="parte">
+            <div class="logo">
+                <img src="assets/CLINICAL logo.svg" alt="" height="100%">
+            </div>
+                        <div class="parte">
             <div class="botao"><p>HOME</p></div>
             <div class="botao"><p>SERVIÇOS</p></div>                
             </div>
@@ -19,37 +21,48 @@
                 <div class="botao"><p>CONTATO</p></div>
                 <div class="botao"><p>SOBRE</p></div>
             </div>
+            <div class="icon">
+                <img src="assets/avatar.svg" alt="" height="40%">
+                <img src="assets/bag.svg" alt="" height="40%">
+            </div>
 
         </div>
     </nav>    
 </body>
 </html>
 <style> 
-.logo{
-    height:100%;
-    
-
+.icon{
+    display: flex;
+    width: min-content;
+    height: 100%;
+    width: 250px;
+    margin-right: 10px;
+    justify-content: space-around;
+    align-items:flex-end;
+    margin-bottom: 20px;
 }
-.botao{
-    border-width: 1px;
-    border-color: black;
+.logo{
+    height:100%
+}
+.botao{    
+    color:rgb(8, 69, 63);
     justify-content: center;
-    border-style:solid;
     align-items: center;
     display: flex;
     height: 100%;
-    width: 100%;    
+    width: 50%;    
+}
+p{
+    font-size: x-large;
 }
 .botao:hover{
-    background-color: ;
-    color: rgb(17, 62, 61);
-    width: 200%;
 
-    
+    background-color: grey;
+    background-color: rgba(200, 200,200 , 0.2) ;
 }
 .parte{
     display: flex;
-    width: 100%;
+    width: 40%;
     height: 100%;
 }
 
@@ -57,12 +70,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    columns: 5;
+    height: 100%
 }
 .nav{
-    height: 100px;
-    background-color: rgb(90, 90, 91);
+    background-image: url(assets/CLINICAL.svg);
+    height: 100px
 }
 
 
