@@ -1,83 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <nav class="nav">
         <div class="navbar">
             <div class="logo">
                 <img src="assets/CLINICAL logo.svg" alt="" height="100%">
             </div>
-                        <div class="parte">
-            <div class="botao"><p>HOME</p></div>
-            <div class="botao"><p>SERVIÇOS</p></div>                
-            </div>
-
-
             <div class="parte">
-                <div class="botao"><p>CONTATO</p></div>
-                <div class="botao"><p>SOBRE</p></div>
+                <div class="botao-nav">
+                    <p>HOME</p>
+                </div>
+                <div class="botao-nav">
+                    <p>SERVIÇOS</p>
+                </div>
+            </div>
+            <div class="parte">
+                <div class="botao-nav">
+                    <p>CONTATO</p>
+                </div>
+                <div class="botao-nav">
+                    <p>SOBRE</p>
+                </div>
             </div>
             <div class="icon">
                 <img src="assets/avatar.svg" alt="" height="40%">
-                <img src="assets/bag.svg" alt="" height="40%">
             </div>
-
         </div>
-    </nav>    
+    </nav>
+    <div class="servico">
+        <div class="servico-menu">
+
+            <div class="botao-servico">
+                <p>1</p>
+            </div>
+            <div class="botao-servico">
+                <p>2</p>
+            </div>
+            <div class="botao-servico">
+                <p>3</p>
+            </div>
+            <div class="botao-servico">
+                <p>4</p>
+            </div>
+        </div>
+        <div class="servico-main">
+            <div class="parte-main"><img src="assets/nutri.png" alt="" width="100%" height="100%" class="image-main"></div>
+            <div class="parte-main">
+                <div class="texto-main">
+                    <div class="profissao-div">
+                        <h1 class="profissao-main">NUTRICIONISTA</h1>
+                    </div>
+                    <div class="nome-div"><img src="assets/nome-icon.png" height class="nome-icon"><h2 class="nome-main">Nutricionista Jussara costa da silva</h2></div>
+                    <p class="descricao-main">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta facere autem quam commodi, beatae architecto amet neque deserunt eligendi nam accusamus natus atque nobis corrupti eius, possimus laborum. Rerum reprehenderit quidem, minima ducimus deleniti impedit aliquam veritatis temporibus, magnam praesentium libero laborum quia mollitia assumenda blanditiis tempora natus eveniet maxime..</p>            
+                </div>
+                <div class="botao-main">
+                    <h1 class="texto-botao">Agende agora</h1>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
-<style> 
-.icon{
-    display: flex;
-    width: min-content;
-    height: 100%;
-    width: 250px;
-    margin-right: 10px;
-    justify-content: space-around;
-    align-items:flex-end;
-    margin-bottom: 20px;
-}
-.logo{
-    height:100%
-}
-.botao{    
-    color:rgb(8, 69, 63);
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    height: 100%;
-    width: 50%;    
-}
-p{
-    font-size: x-large;
-}
-.botao:hover{
 
-    background-color: grey;
-    background-color: rgba(200, 200,200 , 0.2) ;
-}
-.parte{
-    display: flex;
-    width: 40%;
-    height: 100%;
-}
+<style>
+    .profissao-div{
+        height: 15%
+    }
+    .nome-icon{place-self: center;
+        height: min-content;
+    }
+    .nome-div{
+        display: flex;
+        justify-content: center;
+    }
+    .texto-botao{
+        color: rgb(255, 255, 255);
+    }
+    .texto-main{
+        width: 100%;
+        height: 75%;
+    }
+    .botao-main{ 
+        font-family: "Cal Sans", sans-serif;
+        display: flex;
+        background-color: rgba(8, 69, 63, 0.8);
+        border-radius: 200px;
+        width: 40%;
+        height: 10%;
+        align-self: start;
+        align-items: center;
+        justify-self: center;
+        justify-content: center;
 
-.navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%
-}
-.nav{
-    background-image: url(assets/CLINICAL.svg);
-    height: 100px
-}
+    }
+    .profissao-main{
+        justify-self: center;
+        font-size: 60px;
+        color: rgba(8, 69, 63, 0.8);
+        
+    }
+    .nome-main{
+        color: gray;
+    }
+    .descricao-main{
+        margin: 40px;;
+        margin-top: 20px;
+    }
+    .image-main{
+        border-radius: 50px;
+    }
+    .parte-main{
+        border-radius: 100px;
+        width: 50%;
+        height: 100%;
+    }
+    body {
+        min-height: 1500px;
+    }
 
+    .servico-main {
+        display: flex;
+        margin-top: 50px;
+        border-radius: 50px;
+        border-width: 2px;
+        border-color: rgb(255, 255, 255);
+        border-style: solid;
+        background-image: url(assets/fundo.png);
+        justify-self: center;
+        width: 90%;
+        height: 600px;
+    }
 
+    .servico-menu {
+        width: 460px;
+        margin-top: 80px;
+        display: flex;
+        justify-self: center;
+        justify-content: space-between;
+    }
 
+    .botao-servico {
+        display: flex;
+        width: 100px;
+        justify-content: center;
+        height: 100%;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 10px;
+        box-shadow: 0px 1px dimgray;
+        border-color: dimgray;
+    }
 
+    .botao-servico:hover {
+        background-color: rgba(200, 200, 200, 0.2);
+    }
+
+    .icon {
+        display: flex;
+        width: min-content;
+        height: 100%;
+        width: 250px;
+        margin-right: 10px;
+        justify-content: space-around;
+        align-items: flex-end;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        height: 100%
+    }
+
+    .botao-nav {
+        color: rgb(8, 69, 63);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 100%;
+        width: 50%;
+    }
+
+    p {
+        font-size: x-large;
+    }
+
+    .botao-nav:hover {
+        background-color: rgba(200, 200, 200, 0.2);
+    }
+
+    .parte {
+        display: flex;
+        width: 40%;
+        height: 100%;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%
+    }
+
+    .nav {
+        background-image: url(assets/CLINICAL.svg);
+        height: 100px
+    }
 </style>
