@@ -51,44 +51,98 @@
             </div>
         </div>
         <div class="servico-main">
-            <div class="parte-main"><img src="assets/nutri.png" alt="" width="100%" height="100%" class="image-main"></div>
+            <div class="parte-main"><img src="assets/nutri.png" alt=""class="image-main">
+            </div>
             <div class="parte-main">
                 <div class="texto-main">
                     <div class="profissao-div">
                         <h1 class="profissao-main">NUTRICIONISTA</h1>
                     </div>
-                    <div class="nome-div"><img src="assets/nome-icon.png" height class="nome-icon"><h2 class="nome-main">Nutricionista Jussara costa da silva</h2></div>
-                    <p class="descricao-main">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta facere autem quam commodi, beatae architecto amet neque deserunt eligendi nam accusamus natus atque nobis corrupti eius, possimus laborum. Rerum reprehenderit quidem, minima ducimus deleniti impedit aliquam veritatis temporibus, magnam praesentium libero laborum quia mollitia assumenda blanditiis tempora natus eveniet maxime..</p>            
+                    <div class="nome-div"><img src="assets/nome-icon.png" height class="nome-icon">
+                        <h2 class="nome-main">Nutricionista Jussara costa da silva</h2>
+                    </div>
+                    <p class="descricao-main">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta facere
+                        autem quam commodi, beatae architecto amet neque deserunt eligendi nam accusamus natus atque
+                        nobis corrupti eius, possimus laborum. Rerum reprehenderit quidem, minima ducimus deleniti
+                        impedit aliquam veritatis temporibus, magnam praesentium libero laborum quia mollitia assumenda
+                        blanditiis tempora natus eveniet maxime..</p>
                 </div>
-                <div class="botao-main">
-                    <h1 class="texto-botao">Agende agora</h1>
+                <div>
+                    <div class="botao-main">
+                        <h1 class="texto-botao">Agende agora</h1>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</body>
+    <div class="tabela-horario">
+        <div class="fundo">
+            <h1>tabela-horario</h1>
+        </div>
+    </div>
+    <div class="rodape">
+        <footer class="rodape-menu"></footer>
+    </div>
 
+</body>
 </html>
 
 <style>
-    .profissao-div{
+    .rodape-menu{
+        background-color: rgba(235, 224, 206, 0.8);
+        width: 100%;
+        height: 300px;
+        align-self: flex-end;
+    }
+    .rodape{
+        display: co;
+        background-color: rgba(235, 224, 206, 0.8);
+        width: 100%;
+
+        align-self: flex-end;
+    }
+    .tabela-horario{
+        width: 90%;
+        justify-self: center;
+        height: 400px;
+    }
+
+    .fundo{
+        background-color: rgb(116, 116, 116);
+        border-color: black;
+        border-width: 3px;
+        border-style: solid;
+        height: 100%;
+    }
+    .parte-botao {
+        height: 25%;
+
+    }
+
+    .profissao-div {
         height: 15%
     }
-    .nome-icon{place-self: center;
+
+    .nome-icon {
+        place-self: center;
         height: min-content;
     }
-    .nome-div{
+
+    .nome-div {
         display: flex;
         justify-content: center;
     }
-    .texto-botao{
+
+    .texto-botao {
         color: rgb(255, 255, 255);
     }
-    .texto-main{
+
+    .texto-main {
         width: 100%;
         height: 75%;
     }
-    .botao-main{ 
+
+    .botao-main {
         font-family: "Cal Sans", sans-serif;
         display: flex;
         background-color: rgba(8, 69, 63, 0.8);
@@ -101,29 +155,35 @@
         justify-content: center;
 
     }
-    .profissao-main{
+
+    .profissao-main {
         justify-self: center;
         font-size: 60px;
         color: rgba(8, 69, 63, 0.8);
-        
     }
-    .nome-main{
+
+    .nome-main {
         color: gray;
     }
-    .descricao-main{
-        margin: 40px;;
+
+    .descricao-main {
+        margin: 40px;
+        ;
         margin-top: 20px;
     }
-    .image-main{
+
+    .image-main {
         border-radius: 50px;
+        width: 100%;
     }
-    .parte-main{
+
+    .parte-main {
         border-radius: 100px;
         width: 50%;
-        height: 100%;
     }
+
     body {
-        min-height: 1500px;
+        min-height: 1800px;
     }
 
     .servico-main {
@@ -136,7 +196,7 @@
         background-image: url(assets/fundo.png);
         justify-self: center;
         width: 90%;
-        height: 600px;
+        height: fit-content
     }
 
     .servico-menu {
